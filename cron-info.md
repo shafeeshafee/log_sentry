@@ -1,17 +1,19 @@
-### Give exec rights to `analyze.log.sh` & `auth_log_creation.sh`
+### Set execute permissions for `analyze.log.sh` & `auth_log_creation.sh`
 
 ```
 chmod +x auth_log_creation.sh
 chmod +x analyze_log.sh
 ```
 
-### Open cron job editor
+### Open the Crontab editor
 
 ```
 crontab -e
 ```
 
-### Run the script daily before the day starts. An example might be like this:
+### Schedule the script
+
+**As in, run the script daily at 6 AM**
 
 ```
 0 6 * * * /home/ubuntu/scripts/analyze-log-files-with-bash/analyze_log.sh
