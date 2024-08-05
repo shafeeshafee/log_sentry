@@ -16,5 +16,5 @@ crontab -e
 **As in, run the script daily at 6 AM**
 
 ```
-0 6 * * * /home/ubuntu/scripts/analyze-log-files-with-bash/analyze_log.sh
+0 6 * * * /path/to-your/script.sh
 ```
